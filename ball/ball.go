@@ -17,3 +17,20 @@ func (b *Ball) Move() {
     b.Y += b.Yspeed
 }
 
+
+
+
+
+    const speed = 1
+type Paddle struct { 
+    X int16
+    Y int16
+    Image *sdl.Surface
+}
+
+func (p *Paddle) MoveLeft(){ 
+    p.X -= speed
+}
+func (p *Paddle) MoveRight(){ 
+    p.X += speed
+}
